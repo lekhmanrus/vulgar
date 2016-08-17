@@ -18,7 +18,8 @@ const HMR = helpers.hasProcessFlag('hot');
 const METADATA = {
   title: 'Angular 2 MEAN Webpack Starter Kit by @datatype_void',
   baseUrl: '/',
-  host: process.env.HOST || '0.0.0.0',
+  protocol: process.env.PROTOCOL || 'http',
+  host: process.env.HOST || 'localhost',
   port: process.env.PORT || 8080,
   ENV: ENV,
   HMR: HMR
